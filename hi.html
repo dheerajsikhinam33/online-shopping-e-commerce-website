@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Shopping</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #333;
+    }
+    p {
+        color: #666;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input[type="hidden"] {
+        display: none;
+    }
+    button["add to cart"] {
+        background-color: #3ca9d8;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    button["add to cart"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<!-- Product Information -->
+<div class="container">
+    <img src="img24.jpg" class="img"/>
+    <h2>Boys</h2>
+    <p>Low fade Denim</p>
+    <p>Price: 1400</p>
+
+    <!-- Add to Cart Button -->
+    <form action="/cart/add" method="post">
+        <input type="hidden" name="product_id" value="123"> <!-- This would be replaced with your product ID -->
+        <input type="hidden" name="quantity" value="1"> <!-- Default quantity is 1, but you can adjust this as needed -->
+        <a href="cart.html">Add to Cart</a>
+</div>
+
+
+<div class="container">
+    <img src="img26.jpg" class="img"/>
+    <h2>Girls</h2>
+    <p>Kurtha</p>
+    <p>Price: 900</p>
+
+    <!-- Add to Cart Button -->
+    <form action="/cart/add" method="post">
+        <input type="hidden" name="product_id" value="123"> <!-- This would be replaced with your product ID -->
+        <input type="hidden" name="quantity" value="1"> <!-- Default quantity is 1, but you can adjust this as needed -->
+        <a href="cart2.html">Add to Cart</a>
+    </form>
+</div>
+
+
+<div class="container">
+    <img src="img.27.jpeg" class="img"/>
+    <h2>Men</h2>
+    <p>Tshirts</p>
+    <p>Price: 500</p>
+
+    <!-- Add to Cart Button -->
+    <form action="/cart/add" method="post">
+        <input type="hidden" name="product_id" value="123"> <!-- This would be replaced with your product ID -->
+        <input type="hidden" name="quantity" value="1"> <!-- Default quantity is 1, but you can adjust this as needed -->
+        <a href="cart3.html">Add to Cart</a>
+    </form>
+</div>
+
+</body>
+</html>
+
+    <title>
+        cart quantity
+    </title>
+    <body>
+     <button onclick="
+        console.log(`cart quantity: ${cartquantity}
+        `);
+        ">Show Quantity</button>
+        <button onclick="
+        cartquantity= cartquantity+2;
+        console.log(`cart quantity: ${cartquantity}
+        `);
+        ">+2</button>
+        <button onclick="
+        cartquantity= cartquantity+3;
+        console.log(`cart quantity: ${cartquantity}
+        `);
+        ">+3</button>
+        <button onclick="
+        cartquantity=0;
+        console.log('cart was reset.')
+        console.log(`cart quantity: ${cartquantity}
+        `);
+        ">Reset Cart</button>   
+        
+    <script>
+        let cartquantity = 0;
+    </script>
+    </body>
+</head>
